@@ -6,7 +6,9 @@ output:
   pdf_document:
     latex_engine: xelatex
 params:
-  V1: Nome Completo
+  nome_completo: Rosineide Diamantina Cardoso Dias      
+  polo: Nina Rodrigues
+  papel: Aluno Pesquisador	  
 header-includes:
 - \usepackage{titling}
 - \pretitle{\begin{center}\LARGE\includegraphics[width=2cm]{logo_ufma.jpeg}\\[\bigskipamount]}
@@ -18,28 +20,29 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 
-```{r echo=FALSE, eval=FALSE}
-library(purrr)
-library(tidyverse)
-```
-
-
 ```{r, eval=FALSE, echo=FALSE}
-arquivo.parametros <- read.csv("~/Desktop/arquivo.parametros.csv", header=FALSE, quote="", stringsAsFactors=FALSE)
+arquivo.parametros <-read.csv("declaracao.csv", header=TRUE, quote="", stringsAsFactors=FALSE)
 ```
 
 
-Declaro, no uso das atribuições legais, estatutárias e regimentais, que `r params$V1` participa, como pesquisadora/o discente voluntária/o (PIBIC-V), do Projeto Piloto de Iniciação Científica nos Polos da Universidade Aberta do Brasil (UAB) no Estado do Maranhão, aprovado pela Resolução CONSEPE-UFMA nº 1935, de 09 de outubro de 2019 e conforme dispõe o Processo nº 23115.033697/2019-21/UFMA.
+Declaro, no uso das atribuições legais, estatutárias e regimentais que ***`r params$nome_completo`*** participa, como `r params$papel`, do Projeto Piloto de Iniciação Científica no polo de `r params$polo` da Universidade Aberta do Brasil (UAB) no Estado do Maranhão, aprovado pela Resolução CONSEPE-UFMA nº 1935, de 09 de outubro de 2019 e conforme dispõe o Processo nº 23115.033697/2019-21/UFMA.
+
 
 \begin{flushright}
 
-Maranhão, 20 de novembro de 2020
+Maranhão, 17 de dezembro de 2020
 
 \end{flushright}
 
 
 \begin{center}
-Prof. Dr. Tadeu Gomes Teixeira
+
+```{r}
+knitr::include_graphics("assina.jpg")
+
+```
+
+  Prof. Dr. Tadeu Gomes Teixeira
 
 Coordenação do Projeto 
   
@@ -47,4 +50,4 @@ Universidade Aberta do Brasil - UFMA
 \end{center}
 
 
-
+  

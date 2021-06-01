@@ -37,12 +37,11 @@ Maranhão, 17 de dezembro de 2020
 
 \begin{center}
 
-```{r}
+
+```{r fig.align='center', fig.height=3, fig.width=2}
 knitr::include_graphics("assina.jpg")
-
 ```
-
-  Prof. Dr. Tadeu Gomes Teixeira
+Prof. Dr. Tadeu Gomes Teixeira
 
 Coordenação do Projeto 
   
